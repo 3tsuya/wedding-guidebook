@@ -114,6 +114,44 @@ h1 {
   text-orientation: upright;
 }
 
+/* 区切り*/
+.img-leaf,
+.img-leaf2 {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.img-leaf2 {
+  transform: scaleY(-1);
+}
+
+.leaf-text {
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  color: black;
+}
+
+.leaf-images {
+  display: block;
+  width: 40%;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 15px;
+}
+
+.leaf {
+  padding: 20px;
+  background-color: whitesmoke;
+  margin: 200px 0;
+}
+
 
 /*プロフィール*/
 .profile {
@@ -168,7 +206,8 @@ h1 {
   gap: 120px;
 }
 
-.imperial-script-regular {
+.imperial-script-regular,
+.leaf-text {
   font-family: "Imperial Script", cursive;
   font-weight: 400;
   font-style: normal;
