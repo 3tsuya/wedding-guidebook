@@ -29,7 +29,7 @@ window.addEventListener('scroll', () => {
 
 /*写真をクリックするとモーダルが表示される*/
 const photo = document.getElementById('photo')
-const modal = document.getElementById('modal')
+const modal = document.getElementById('photo-modal')
 
 photo.addEventListener('click', () => {
   modal.style.display = 'flex';
@@ -37,5 +37,20 @@ photo.addEventListener('click', () => {
 
 modal.addEventListener('click', () => {
   modal.style.display = 'none';
+});
+
+/*about us */
+const aboutModal = document.getElementById('about-modal');
+const aboutImage = document.getElementById('about-modal-image');
+
+document.querySelectorAll(".about-item").forEach(item => {
+  item.addEventListener("click", () => {
+    aboutImage.src = item.dataset.img;
+    aboutModal.style.display = "flex";
+  });
+});
+
+aboutModal.addEventListener("click", () => {
+  aboutModal.style.display = "none";
 });
 
