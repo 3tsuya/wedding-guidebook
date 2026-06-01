@@ -2,7 +2,9 @@
 body {
   background-image: url("img/background.png");
   max-width: 430px;
+  width: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 p,
