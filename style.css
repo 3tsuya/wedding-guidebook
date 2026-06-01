@@ -93,8 +93,8 @@ h1 {
 
 /*挨拶*/
 .greeting {
-  padding: 100px 0;
-  margin: 200px 0;
+  padding: 50px 0;
+  margin: 100px 0;
   display: flex;
   gap: 20px;
 }
@@ -157,7 +157,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 200px 0;
+  margin: 100px 0;
 }
 
 .profile-title {
