@@ -2,9 +2,7 @@
 body {
   background-image: url("img/background.png");
   max-width: 430px;
-  width: 100%;
   margin: 0 auto;
-  overflow-x: hidden;
 }
 
 p,
@@ -144,7 +142,7 @@ h1 {
 .images {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap:10px;
 }
 
