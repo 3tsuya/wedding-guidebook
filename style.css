@@ -116,19 +116,18 @@ h1 {
 }
 
 /* 区切り*/
-.img-leaf,
-.img-leaf2 {
-  display: block;
-  margin: 0 auto;
-  width: 70%;
+.leaf-olive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.img-leaf2 {
-  transform: scaleY(-1);
+.olive {
+  width: 25%;
 }
 
 .leaf-text {
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
   padding: 10px;
   color: black;
@@ -136,20 +135,20 @@ h1 {
 
 .leaf-images {
   display: block;
-  width: 40%;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 
 .images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  padding: 15px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:10px;
 }
 
 .leaf {
-  padding: 40px;
-  background-color: #dfebe3;
+  padding: 0 20px 50px 20px;
+  background-color: #dfebe3;  
 }
 
 
