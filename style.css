@@ -142,12 +142,12 @@ h1 {
 .images {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap:10px;
 }
 
 .leaf {
-  padding: 0 20px 50px 20px;
+  padding: 0 10px 50px 10px;
   background-color: #dfebe3;  
 }
 
