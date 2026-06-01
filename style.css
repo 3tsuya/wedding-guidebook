@@ -115,7 +115,7 @@ h1 {
   text-orientation: upright;
 }
 
-/* 区切り
+/* 区切り*/
 .leaf-olive {
   display: flex;
   justify-content: center;
@@ -149,7 +149,7 @@ h1 {
 .leaf {
   padding: 0 10px 50px 10px;
   background-color: #dfebe3;  
-} */
+} 
 
 
 /*プロフィール*/
