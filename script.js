@@ -1,20 +1,23 @@
-/*アイコン表示→表紙*/
+/* =========================
+  ロゴのフェードアウトとタイトルのフェードイン
+========================= */
 window.addEventListener("DOMContentLoaded", () => {
   const icon = document.getElementById("icon");
   const title = document.getElementById("title");
 
-  setTimeout(()=>{
-    icon.style.opacity="0";
-    icon.style.transform="translateY(-40px)"
-  
-   setTimeout(() => {
+  setTimeout(() => {
+    icon.style.opacity = "0";
+    icon.style.transform = "translateY(-40px)"
+
+    setTimeout(() => {
       icon.style.display = "none";
       title.classList.add("show");
     }, 800); // フェードアウト時間
   }, 2000);
 });
-
-/*スクロールでフェードイン*/
+/* =========================
+  スクロールに応じて要素をフェードイン
+========================= */
 const fadeElements = document.querySelectorAll('.fadein');
 
 window.addEventListener('scroll', () => {
@@ -27,30 +30,32 @@ window.addEventListener('scroll', () => {
   });
 });
 
-/*写真をクリックするとモーダルが表示される*/
-const photo = document.getElementById('photo')
-const modal = document.getElementById('photo-modal')
+/* =========================
+  写真のモーダル表示
+========================= */
+// const photo = document.getElementById('photo')
+// const modal = document.getElementById('photo-modal')
 
-photo.addEventListener('click', () => {
-  modal.style.display = 'flex';
+// photo.addEventListener('click', () => {
+//   modal.style.display = 'flex';
+// });
+
+// modal.addEventListener('click', () => {
+//   modal.style.display = 'none';
+// });
+
+/* =========================
+  家族紹介
+========================= */
+const familyBtn = document.getElementById('about-family-btn');
+const familySection = document.getElementById('about-family');
+const closeBtn = document.getElementById("close-family");
+
+familyBtn.addEventListener('click', () => {
+  console.log(familySection.classList);
+  familySection.classList.toggle('show');
 });
 
-modal.addEventListener('click', () => {
-  modal.style.display = 'none';
+closeBtn.addEventListener("click", () => {
+  familySection.classList.remove("show");
 });
-
-/*about us */
-const aboutModal = document.getElementById('about-modal');
-const aboutImage = document.getElementById('about-modal-image');
-
-document.querySelectorAll(".about-item").forEach(item => {
-  item.addEventListener("click", () => {
-    aboutImage.src = item.dataset.img;
-    aboutModal.style.display = "flex";
-  });
-});
-
-aboutModal.addEventListener("click", () => {
-  aboutModal.style.display = "none";
-});
-
