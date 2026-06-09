@@ -311,8 +311,7 @@ h2 {
   padding: 60px 0;
 }
 
-#about-family-btn,
-#close-family {
+#about-family-btn {
   font-family: "Luckiest Guy", cursive;
   font-weight: 400;
   font-style: normal;
@@ -459,6 +458,31 @@ h2 {
   font-size: 12px;
   margin-top: 8px;
   color: #4a787d;
+}
+
+.close-btn {
+  padding-bottom: 40px;
+}
+
+#close-family {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  display: inline-block;
+  padding: 6px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eee;
+
+  cursor: pointer;
+  transition: 0.2s;
+
+  font-size: 20px;
+  background-color: #4a787d;
+  color: white;
 }
 
 /* =========================
