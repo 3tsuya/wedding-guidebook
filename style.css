@@ -562,21 +562,21 @@ h2 {
 
 .life-takuya,
 .life-maho {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
   font-size: 12px;
   color: white;
-  font-family: "Luckiest Guy", cursive;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .life-maho {
-  text-align: center;
-  font-size: 14px;
-  color: white;
   font-family: "Luckiest Guy", cursive;
   font-weight: 400;
   font-style: normal;
+  text-align: center;
+  font-size: 14px;
+  color: white;
   padding-top: 40px;
 }
 
