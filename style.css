@@ -45,7 +45,6 @@ h2 {
   justify-content: center;
   height: 100vh;
   width: 100%;
-  /* background-color: #6c7235; */
   background-color: white;
   transition: 1s;
 }
@@ -86,12 +85,13 @@ h1 {
 .imgtitle {
   width: 60%;
   margin-top: 30px;
+  border-radius: 12px;
 }
 
 .title-name {
   display: flex;
   gap: 40px;
-  font-size: 12px;
+  font-size: 15px;
   margin-bottom: 50px
 }
 
@@ -99,15 +99,36 @@ h1 {
    Greeting
 ========================= */
 .greeting {
-  padding: 180px 0;
-  margin: 50px 0;
+  background-color: #6c7235;
+  padding: 30px 0;
+  margin:180px 0;
+}
+
+.goaisatsu-matome {
   display: flex;
-  gap: 20px;
-  background-color: white;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .imggreeting {
-  width: 55%;
+  display: block;
+  margin:0 auto 20px auto;
+  width: 65%;
+  border-radius: 60% 40% 30% 70%;
+  box-shadow:
+    0 10px 20px rgba(212, 175, 55, 0.25),
+    0 20px 40px rgba(184, 134, 11, 0.15);
+}
+
+.goaisatsu-title {
+  font-size: 50px;
+  color: white;
+  margin: 0 40px 100px 40px;
+}
+
+.goaisatsu-title,
+.goaisatsu-text-text {
+  writing-mode: vertical-rl;
 }
 
 .profile-title {
@@ -116,10 +137,10 @@ h1 {
   gap: 1px;
 }
 
-.greeting-text {
-  font-size: 18px;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
+.goaisatsu-text-text {
+  font-size: 15px;
+  color: white;
+  margin: 100px 40px 0 40px;
 }
 
 /* =========================
@@ -130,7 +151,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   margin: 20px 0;
-  background-color: #dfebe3;
 }
 
 .profile-title {
@@ -290,7 +310,7 @@ h2 {
   transition: 0.2s;
 
   font-size: 20px;
-  background-color: #4a787d;
+  background-color: #6c7235;
   color: white;
 }
 
@@ -455,11 +475,12 @@ h2 {
   position: relative;
   padding-bottom: 50px;
 }
-.our-thema{
+
+.our-thema {
   text-align: center;
   font-size: 17px;
-  margin:0;
-  padding:10px;
+  margin: 0;
+  padding: 10px;
 }
 
 .life-img {
