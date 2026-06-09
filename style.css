@@ -99,7 +99,7 @@ h1 {
    Greeting
 ========================= */
 .greeting {
-  padding: 100px 0;
+  padding: 180px 0;
   margin: 50px 0;
   display: flex;
   gap: 20px;
@@ -116,54 +116,11 @@ h1 {
   gap: 1px;
 }
 
-/* .title-greeting-text {
-  font-size: 20px;
-} */
-
 .greeting-text {
   font-size: 18px;
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
-
-/* /* =========================
-   区切り
-========================= */
-.leaf-olive {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.olive {
-  width: 25%;
-}
-
-.leaf-text {
-  font-size: 35px;
-  text-align: center;
-  padding: 10px;
-  color: black;
-}
-
-.leaf-images {
-  display: block;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
-  width: 100%;
-}
-
-.images {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-
-.leaf {
-  padding: 0 10px 50px 10px;
-  background-color: #dfebe3;
-} */
-
 
 /* =========================
     Profile
@@ -172,7 +129,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin: 20px 0;
+  background-color: #dfebe3;
 }
 
 .profile-title {
@@ -258,16 +216,16 @@ h2 {
 }
 
 .text-both {
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   font-weight: bold;
-  line-height: 2.6;
+  line-height: 2.2;
 }
 
 .text-both-center {
-  font-size: 8px;
+  font-size: 10px;
   text-align: center;
-  line-height: 4;
+  line-height: 3;
 }
 
 /* .message {
@@ -316,14 +274,10 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
 #about-family-btn {
-  font-family: "Luckiest Guy", cursive;
-  font-weight: 400;
-  font-style: normal;
-
   display: inline-block;
   padding: 12px 24px;
   border-radius: 999px;
@@ -389,6 +343,7 @@ h2 {
 
 .nishioka-family,
 .nakamura-family {
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -499,7 +454,6 @@ h2 {
 .life-consept {
   position: relative;
   padding-bottom: 50px;
-  background-color: #dfebe3;
 }
 .our-thema{
   text-align: center;
