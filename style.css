@@ -100,6 +100,66 @@ h1 {
 ========================= */
 .greeting {
   background-color: #6c7235;
+  padding: 40px 20px; /* 左右に少し余白を入れてスマホでのハミ出し防止 */
+  margin: 100px 0;    /* 180pxは広すぎるので少し調整 */
+}
+
+/* 1. Flexboxではなく、縦書きに強いGridを使う */
+.goaisatsu-matome {
+  display: grid;
+  /* 右から順に：タイトル(自動幅)、本文(自動幅)、画像(残り全部) */
+  grid-template-columns: 1fr auto auto; 
+  gap: 40px;          /* 要素間の隙間はmarginではなくgapで一括管理 */
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* 2. 画像のレスポンシブ対応 */
+.imggreeting {
+  display: block;
+  width: 100%;        /* 親要素（1fr）の幅に合わせる */
+  max-width: 400px;   /* 大きくなりすぎない上限 */
+  height: auto;
+  border-radius: 60% 40% 30% 70%;
+  box-shadow:
+    0 10px 20px rgba(212, 175, 55, 0.25),
+    0 20px 40px rgba(184, 134, 11, 0.15);
+}
+
+/* 3. タイトルの余白ズレを修正 */
+.goaisatsu-title {
+  writing-mode: vertical-rl;
+  font-size: clamp(30px, 5vw, 50px); /* スマホでは小さく、PCでは50pxになる魔法の記述 */
+  color: white;
+  margin: 0;         /* 危険な固定マージンをリセット */
+  line-height: 1.4;
+}
+
+/* 4. 本文の余白ズレを修正 */
+.goaisatsu-text-text {
+  writing-mode: vertical-rl;
+  font-size: 15px;
+  color: white;
+  margin: 0;         /* 危険な固定マージンをリセット */
+  line-height: 2;    /* 縦書きは行間を広げると圧倒的に読みやすくなります */
+}
+
+.profile-title {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+/* スマホ用の設定（画面幅が狭いときは縦並びにする） */
+@media (max-width: 768px) {
+  .goaisatsu-matome {
+    grid-template-columns: 1fr; /* 1列に並べる */
+    justify-items: center;
+  }
+}
+/* .greeting {
+  background-color: #6c7235;
   padding: 40px 0;
   margin:180px 0;
 }
@@ -141,7 +201,7 @@ h1 {
   font-size: 15px;
   color: white;
   margin: 100px 40px 0 40px;
-}
+} */
 
 /* =========================
     Profile
