@@ -99,10 +99,11 @@ h1 {
    Greeting
 ========================= */
 .greeting {
-  padding: 50px 0;
+  padding: 100px 0;
   margin: 50px 0;
   display: flex;
   gap: 20px;
+  background-color: white;
 }
 
 .imggreeting {
@@ -115,13 +116,17 @@ h1 {
   gap: 1px;
 }
 
+/* .title-greeting-text {
+  font-size: 20px;
+} */
+
 .greeting-text {
   font-size: 18px;
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
 
-/* =========================
+/* /* =========================
    区切り
 ========================= */
 .leaf-olive {
@@ -157,7 +162,7 @@ h1 {
 .leaf {
   padding: 0 10px 50px 10px;
   background-color: #dfebe3;
-}
+} */
 
 
 /* =========================
@@ -189,7 +194,7 @@ h1 {
   position: relative;
   border-top: 2px solid#6c7235;
   width: 300px;
-  margin: 40px 0;
+  margin: 40px auto;
 }
 
 .line1::before,
@@ -212,7 +217,9 @@ h1 {
 
 .profile-name {
   display: flex;
-  gap: 120px;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
 }
 
 .imperial-script-regular,
@@ -235,7 +242,7 @@ h2 {
 }
 
 .groom-name,
-.maho-name {
+.bride-name {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -245,6 +252,7 @@ h2 {
 .profile-both {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   height: 300px;
 }
@@ -262,7 +270,7 @@ h2 {
   line-height: 4;
 }
 
-.message {
+/* .message {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -299,7 +307,7 @@ h2 {
 .modal-image {
   width: 80%;
   max-width: 400px;
-}
+} */
 
 /* =========================
    btn
