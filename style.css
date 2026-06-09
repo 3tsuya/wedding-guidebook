@@ -98,68 +98,7 @@ h1 {
 /* =========================
    Greeting
 ========================= */
-/* =========================
-   Greeting (修正版)
-========================= */
 .greeting {
-  background-color: #6c7235;
-  padding: 50px 24px; /* 上下にゆとりを持たせ、左右に余白を確保 */
-  margin: 100px 0;
-}
-
-.goaisatsu-matome {
-  /* 430pxの幅に綺麗に収めるため、縦に並べる構成にします */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px; /* 各要素（画像・本文・タイトル）の間の余白 */
-}
-
-/* 1. 画像のレスポンシブ対応 */
-.imggreeting {
-  display: block;
-  width: 85%; /* 430pxの中でバランスの良いサイズ感に指定 */
-  max-width: 320px;
-  height: auto;
-  border-radius: 60% 40% 30% 70%;
-  box-shadow:
-    0 10px 20px rgba(212, 175, 55, 0.25),
-    0 20px 40px rgba(184, 134, 11, 0.15);
-}
-
-/* 2. 縦書きテキストを包むコンテナ（※超重要） */
-/* タイトルと本文を「右から左」に美しく並べるための設定 */
-.goaisatsu-text-wrap {
-  writing-mode: vertical-rl; /* ここで一括して縦書き（右から左）を指示 */
-  display: flex;
-  direction: ltr;            /* 右から左へ要素を正しく並べるためのブラウザ対策 */
-  gap: 30px;                 /* タイトルと本文の間のスペース */
-  height: 380px;             /* 💡重要: 縦書きの文字が途中で折れずに収まる高さ */
-  margin: 0 auto;
-}
-
-/* 3. タイトルの修正 */
-.goaisatsu-title {
-  /* writing-modeは親要素で指定したため不要 */
-  font-size: 38px;           /* 430pxの画面幅に合わせた最適なサイズ */
-  color: white;
-  margin: 0;                 /* 余計なマージンを完全リセット */
-  line-height: 1.2;
-  letter-spacing: 0.1em;
-}
-
-/* 4. 本文の修正 */
-.goaisatsu-text-text {
-  /* writing-modeは親要素で指定したため不要 */
-  font-size: 15px;
-  color: white;
-  margin: 0;                 /* 余計なマージンを完全リセット */
-  line-height: 2.2;          /* 行間を広げて、高級感と読みやすさをアップ */
-  letter-spacing: 0.05em;
-}
-
-/* 共通設定にあった @media (max-width: 768px) の記述は不要になったため削除 */
-/* .greeting {
   background-color: #6c7235;
   padding: 40px 0;
   margin:180px 0;
@@ -202,7 +141,7 @@ h1 {
   font-size: 15px;
   color: white;
   margin: 100px 40px 0 40px;
-} */
+}
 
 /* =========================
     Profile
@@ -562,9 +501,6 @@ h2 {
 
 .life-takuya,
 .life-maho {
-  font-family: "Luckiest Guy", cursive;
-  font-weight: 400;
-  font-style: normal;
   text-align: center;
   font-size: 12px;
   color: white;
