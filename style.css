@@ -297,7 +297,7 @@ h2 {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  margin:20px 0
+  margin: 20px 0
 }
 
 #about-family-btn {
@@ -551,6 +551,69 @@ h2 {
   margin: 0;
 }
 
+/* =========================
+    memory
+========================= */
+.memory {
+  background-color: #6c7235;
+  padding: 10px 10px 60px 10px;
+
+}
+
+.memory-title{
+  display: flex;
+  justify-content: center;
+  color:white;
+  font-size: 40px;
+}
+.memory-gallery {
+  column-count: 2;
+  column-gap: 12px;
+}
+
+.photos {
+  width: 100%;
+  border-radius: 12px;
+  background: white;
+  margin-bottom: 12px;
+  break-inside: avoid;
+}
+
+.photo1 {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo2 {
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo3 {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo4 {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo5 {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo6 {
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+}
 
 /* =========================
     LAST
