@@ -222,35 +222,33 @@ h2 {
   margin: 0;
 }
 
-.groom-name,
-.bride-name {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
-
 .profile-both {
-  display: flex;
+  height: 400px;
+}
+
+.profile-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
-  height: 300px;
+  font-size:10px;
+  margin: 0;
 }
 
-.text-both {
-  font-size: 14px;
+.label {
+  padding: 0 18px;
   text-align: center;
-  font-weight: bold;
-  line-height: 2.2;
+  margin: 0 20px;
 }
 
-.text-both-center {
-  font-size: 10px;
-  text-align: center;
-  line-height: 3;
+.value:first-child {
+  justify-self: end;   /* 左列の右端へ */
+  text-align: right;
 }
 
+.value:last-child {
+  justify-self: start; /* 右列の左端へ */
+  text-align: left;
+}
 
 /* =========================
    btn

@@ -31,20 +31,6 @@ window.addEventListener('scroll', () => {
 });
 
 /* =========================
-  写真のモーダル表示
-========================= */
-// const photo = document.getElementById('photo')
-// const modal = document.getElementById('photo-modal')
-
-// photo.addEventListener('click', () => {
-//   modal.style.display = 'flex';
-// });
-
-// modal.addEventListener('click', () => {
-//   modal.style.display = 'none';
-// });
-
-/* =========================
   家族紹介
 ========================= */
 const familyBtn = document.getElementById('about-family-btn');
