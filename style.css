@@ -471,11 +471,11 @@ h2 {
   justify-content: space-between;
 }
 
-.life-takuya,
-.life-maho {
+.life-takuya {
   text-align: center;
   font-size: 12px;
   color: white;
+  padding-top: 40px;
 }
 
 .life-maho {
@@ -483,9 +483,8 @@ h2 {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   color: white;
-  padding-top: 40px;
 }
 
 
